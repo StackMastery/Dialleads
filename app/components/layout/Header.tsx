@@ -9,23 +9,14 @@ import { Turn as Hamburger } from "hamburger-react";
 
 const Header = () => {
   const [windowScrolled, setWindowScrolled] = useState(false);
-  const [scrollingBack, setScrollingBack] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
   const [navOpened, setnavOpened] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollY = window.scrollY;
-      const scrollDown = currentScrollY > lastScrollY;
 
       setWindowScrolled(currentScrollY > 0);
-      setScrollingBack(!scrollDown);
-
-      const bottomReached =
-        window.innerHeight + currentScrollY >= document.body.offsetHeight - 2;
-      if (bottomReached) {
-        setScrollingBack(false);
-      }
 
       setLastScrollY(currentScrollY);
     };
@@ -101,7 +92,11 @@ const HeaderNavs = ({
   );
 };
 
-export const HeaderContactBtn = ({ className = "" }) => {
+export const HeaderContactBtn = ({
+  className = "",
+}: {
+  className?: string;
+}) => {
   return (
     <Link className={className} href={"/contact"}>
       <Button>Contact us</Button>
