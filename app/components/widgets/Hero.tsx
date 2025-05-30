@@ -14,7 +14,7 @@ const Hero = () => {
     <>
       <section className="flex justify-center p-3">
         <div className="flex relative w-full flex-col  rounded-xl overflow-hidden bg-black pt-48 justify-center items-center">
-          <div className="px-6 z-20 gap-8 flex flex-col items-center">
+          <div className="px-6 z-20 gap-8 flex flex-col items-center lg:-mb-28">
             <LabelHighlighted
               icon={
                 <CircleCheck
@@ -50,7 +50,7 @@ const Hero = () => {
             }}
             className="w-full mb-3 scale-110 relative"
           >
-            <div className="h-[280px] min-[350px]:h-[300px] min-[450px]:h-[380px] sm:h-[390px] md:h-[320px] lg:h-[400px]" />
+            <div className="h-[280px] min-[350px]:h-[300px] min-[450px]:h-[380px] sm:h-[390px] md:h-[320px] lg:h-[600px] lg:-mt-20" />
             <Image
               alt="Background Overlay"
               layout="fill"

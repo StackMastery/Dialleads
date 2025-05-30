@@ -65,6 +65,7 @@ const VideoModal = ({
               </div>
             </DialogTrigger>
             <Image
+              placeholder="blur"
               className="max-w"
               src={isMobile ? mobileThumb : thumb}
               alt="Video Thumbnail"
