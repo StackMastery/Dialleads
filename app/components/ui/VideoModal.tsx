@@ -7,7 +7,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 
 const VideoModal = ({
   thumb,
@@ -15,8 +15,8 @@ const VideoModal = ({
   customTriger,
   className,
 }: {
-  thumb: string;
-  mobileThumb: string;
+  thumb: StaticImageData | string;
+  mobileThumb: StaticImageData | string;
   customTriger?: React.ReactNode;
   className?: string;
 }) => {
