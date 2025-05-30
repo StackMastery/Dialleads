@@ -19,7 +19,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-arp="">
-      <body className={`${spaceGrotesk.className}  antialiased`}>
+      <body
+        data-new-gr-c-s-check-loaded="14.1237.0"
+        data-gr-ext-installed=""
+        className={`${spaceGrotesk.className}  antialiased`}
+      >
         <Header />
         {children}
       </body>

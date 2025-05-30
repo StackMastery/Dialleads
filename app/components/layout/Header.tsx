@@ -29,7 +29,7 @@ const Header = () => {
     <header
       className={`section w-full fixed top-0 p-5 transition-all duration-300 ${
         windowScrolled ? "bg-white shadow-lg" : "bg-transparent"
-      }`}
+      } z-[9999]`}
     >
       <div className="max-w-p flex w-full justify-between items-center">
         <Logo mode={windowScrolled ? "dark" : "light"} />
