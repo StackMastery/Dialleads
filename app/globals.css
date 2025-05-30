@@ -1,5 +1,18 @@
 @import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
 
 .max-w-p {
   max-width: 1280px;
+}
+
+.section {
+  display: flex;
+  justify-content: center;
+}
+
+@theme {
+  --color-purple-main: #7c3aed;
+  --color-purple-sec: #b188f0;
 }
