@@ -48,7 +48,7 @@ const Header = () => {
           <span className="lg:hidden">
             <Hamburger
               color={windowScrolled ? "black" : "white"}
-              rounded={2}
+              rounded={true}
               onToggle={(toggled) => {
                 if (toggled) {
                   setnavOpened(true);
@@ -66,7 +66,13 @@ const Header = () => {
 
 export default Header;
 
-const HeaderNavs = ({ windowScrolled, navOpened }) => {
+const HeaderNavs = ({
+  windowScrolled,
+  navOpened,
+}: {
+  windowScrolled: boolean;
+  navOpened: boolean;
+}) => {
   return (
     <nav
       className={`absolute w-full lg:w-fit lg:static left-0 top-15  lg:block ${
