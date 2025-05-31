@@ -9,7 +9,7 @@ const LabelHighlighted = ({
   className,
   children,
 }: {
-  bg: string;
+  bg?: string;
   icon?: React.ReactNode;
   className?: string;
   children?: React.ReactNode;
