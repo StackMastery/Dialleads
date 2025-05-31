@@ -1,5 +1,6 @@
 import AiAgentAction from "./components/widgets/AiAgentAction";
 import BrandSection from "./components/widgets/BrandSection";
+import Comparision from "./components/widgets/Comparison";
 import Features from "./components/widgets/Features";
 import GetStarted from "./components/widgets/GetStarted";
 import Hero from "./components/widgets/Hero";
@@ -16,6 +17,7 @@ const Home = () => {
       <Industry />
       <AiAgentAction />
       <GetStarted />
+      <Comparision />
     </>
   );
 };
