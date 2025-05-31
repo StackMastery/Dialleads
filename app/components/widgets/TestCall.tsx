@@ -1,6 +1,5 @@
 import { Mail, PhoneCall, Star, UserRound } from "lucide-react";
 import TestCallBg from "../../../public/testCallbg.png";
-import LabelHighlighted from "../ui/LabelHighlighted";
 import H2 from "../ui/H2";
 import TextParagraph from "../ui/TextParagraph";
 import Input, { PhoneInput } from "../ui/Input";
@@ -9,8 +8,8 @@ import Button from "../ui/Button";
 const TestCall = () => {
   return (
     <>
-      <section className="section pb-20">
-        <div className="max-w-p w-full">
+      <section className="section pb-20 pt-10">
+        <div className="max-w-p w-full px-5">
           <div
             style={{
               backgroundImage: `linear-gradient(98deg,#200b46,#1a0939)`,
