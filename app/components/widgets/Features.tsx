@@ -20,8 +20,13 @@ const Features = () => {
                 className="col-span-12 min-[450px]:col-span-6 md:col-span-4 lg:col-span-3 p-5 border border-border-main rounded-xl"
                 key={`features-${index}`}
               >
-                <Image width={55} src={feature.icon} alt={feature.name || ""} />
-                <div className="pt-4 space-y-3">
+                <Image
+                  width={55}
+                  placeholder="blur"
+                  src={feature.icon}
+                  alt={feature.name || ""}
+                />
+                <div className="pt-5 space-y-3">
                   <h4 className="text-2xl font-semibold">{feature.name}</h4>
                   <p className="text-gray-500/90 text-sm lg:text-lg">
                     {feature.des}

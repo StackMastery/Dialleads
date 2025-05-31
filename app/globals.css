@@ -37,3 +37,12 @@
   background-size: 400% 400%;
   animation: shine 6s linear infinite;
 }
+
+/* Hide scrollbar */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
