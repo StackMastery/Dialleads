@@ -14,7 +14,7 @@ const TestCall = () => {
             style={{
               backgroundImage: `linear-gradient(98deg,#200b46,#1a0939)`,
             }}
-            className=" w-full rounded-3xl overflow-hidden"
+            className=" w-full rounded-4xl overflow-hidden"
           >
             <div
               className="w-full px-10 space-y-5 py-10 bg-cover"

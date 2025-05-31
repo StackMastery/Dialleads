@@ -38,7 +38,7 @@ const Industry = () => {
                     >
                       <button
                         onClick={() => setactiveTab(index)}
-                        className={`px-2 p-1 flex text-lg min-w-[280px] -mx-5 font-medium items-center gap-3 cursor-pointer rounded-full border pr-10 ${
+                        className={`px-2 p-1 flex text-lg min-w-[280px] -mx-14 font-medium items-center gap-3 cursor-pointer rounded-full border pr-10 ${
                           activeTab === index
                             ? "bg-purple-main text-white"
                             : "bg-transparent text-purple-main"

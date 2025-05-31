@@ -1,3 +1,4 @@
+import AiAgentAction from "./components/widgets/AiAgentAction";
 import BrandSection from "./components/widgets/BrandSection";
 import Features from "./components/widgets/Features";
 import Hero from "./components/widgets/Hero";
@@ -12,6 +13,7 @@ const Home = () => {
       <TestCall />
       <Features />
       <Industry />
+      <AiAgentAction />
     </>
   );
 };

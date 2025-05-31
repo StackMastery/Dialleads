@@ -38,11 +38,7 @@
   animation: shine 6s linear infinite;
 }
 
-/* Hide scrollbar */
-.no-scrollbar::-webkit-scrollbar {
-  display: none;
-}
-.no-scrollbar {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+.bg-real-world-gradient {
+  background-image: radial-gradient(113.28% 100% at 50% 0%, #000, #0000 69.79%),
+    linear-gradient(180deg, #000, #5b21b6 100%, #7c3aed, #a78bfa);
 }
