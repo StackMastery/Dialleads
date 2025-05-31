@@ -5,7 +5,7 @@ type HeaderNavItem = {
 
 export const HeaderNavsData: HeaderNavItem[] = [
   {
-    name: "Real estate",
+    name: "Real state",
     link: "real-estate",
   },
   {
