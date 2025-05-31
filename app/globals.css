@@ -15,6 +15,7 @@
 @theme {
   --color-purple-main: #7c3aed;
   --color-purple-sec: #b188f0;
+  --color-border-main: #bdc2c98f;
 }
 
 @keyframes shine {
