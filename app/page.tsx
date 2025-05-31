@@ -1,6 +1,7 @@
 import AiAgentAction from "./components/widgets/AiAgentAction";
 import BrandSection from "./components/widgets/BrandSection";
 import Comparision from "./components/widgets/Comparison";
+import Dialleads from "./components/widgets/Dialleads";
 import Faqs from "./components/widgets/Faqs";
 import Features from "./components/widgets/Features";
 import GetStarted from "./components/widgets/GetStarted";
@@ -22,6 +23,7 @@ const Home = () => {
       <GetStarted />
       <Comparision />
       <Integrations />
+      <Dialleads />
       <Testomonial />
       <Faqs />
     </>
