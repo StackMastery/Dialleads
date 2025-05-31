@@ -6,12 +6,43 @@ import { FaSquareFacebook, FaYoutube } from "react-icons/fa6";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { TbMailFilled } from "react-icons/tb";
 import { HeaderNavsData } from "@/data/HeaderData";
+import Image from "next/image";
+import BackgroundOverlay from "../../../public/grid.png";
+import Button from "../ui/Button";
+import { Rocket } from "lucide-react";
 
 const Footer = () => {
   return (
     <>
       <footer className="section">
         <div className="max-w-p w-full flex flex-col px-5 ">
+          <div
+            className="rounded-2xl relative flex-col gap-10 flex justify-center px-10 items-center py-20 text-white"
+            style={{
+              backgroundImage: `radial-gradient(113.28% 100% at 50% 0%, #000, #0000 69.79%), linear-gradient(180deg, #000, #5b21b6 100%, #7c3aed, #a78bfa)`,
+            }}
+          >
+            <h2 className="text-4xl sm:text-5xl md:text-6xl text-center max-w-[680px] font-semibold">
+              Unlock the Power of{" "}
+              <span className=" bg-clip-text bg-gradient-to-b from-violet-400 to-purple-main text-transparent">
+                {" "}
+                AI Voice Assistants
+              </span>{" "}
+              for Your Business
+            </h2>
+            <Link href={"/"} className="z-10">
+              <Button className="!px-5 !h-12">
+                {" "}
+                <Rocket size={18} strokeWidth={1.4} /> Ready to begin?
+              </Button>
+            </Link>
+            <Image
+              src={BackgroundOverlay}
+              className="pointer-events-none absolute inset-0 z-0 h-full w-full object-cover opacity-60 mix-blend-overlay lg:opacity-100"
+              alt="Footer banner"
+              layout="fill"
+            />
+          </div>
           <div className="w-full flex justify-between flex-wrap gap-x-10 pt-10 pb-5 border-b border-border-main">
             <div className="max-w-[384px]">
               <Logo
