@@ -6,6 +6,7 @@ import Features from "./components/widgets/Features";
 import GetStarted from "./components/widgets/GetStarted";
 import Hero from "./components/widgets/Hero";
 import Industry from "./components/widgets/Industry";
+import Integrations from "./components/widgets/Integrations";
 import TestCall from "./components/widgets/TestCall";
 import Testomonial from "./components/widgets/Testomonial";
 
@@ -20,6 +21,7 @@ const Home = () => {
       <AiAgentAction />
       <GetStarted />
       <Comparision />
+      <Integrations />
       <Testomonial />
       <Faqs />
     </>

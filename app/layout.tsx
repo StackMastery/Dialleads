@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import Header from "./components/layout/Header";
 import Footer from "./components/layout/Footer";
 
-const geistFont = Geist({
+const spaceGrotesk = Space_Grotesk({
   subsets: ["latin"],
 });
 
@@ -23,7 +23,7 @@ export default function RootLayout({
       <body
         data-new-gr-c-s-check-loaded="14.1237.0"
         data-gr-ext-installed=""
-        className={`${geistFont.className}  antialiased`}
+        className={`${spaceGrotesk.className}  antialiased`}
       >
         <Header />
         {children}
