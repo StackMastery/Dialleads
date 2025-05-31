@@ -43,3 +43,27 @@ const Button = React.forwardRef<HTMLButtonElement, ButtonProps>(
 Button.displayName = "Button";
 
 export default Button;
+
+type GradientButtonProps = {
+  className?: string;
+  children: React.ReactNode;
+  icon?: React.ReactNode;
+};
+
+export const GradientButton: React.FC<GradientButtonProps> = ({
+  icon,
+  className,
+  children,
+}) => {
+  return (
+    <button
+      className={cn(
+        ` group relative mt-[30px] text-lg cursor-pointer flex h-[52px] w-full justify-center items-center gap-3 overflow-clip rounded-[0.75rem] border border-violet-600 bg-transparent px-3 py-4 text-violet-600 transition-all duration-200 ease-linear after:absolute after:inset-y-0 after:right-[100%] after:z-[-1] after:w-[150%] after:transition-all after:duration-300 after:ease-linear after:content-[''] after:[background-image:_linear-gradient(to_right,_rgba(113,48,214,1.0)_0%,_rgba(177,136,240,1.0)_70%,_rgba(177,136,240,0.0)_100%)] hover:bg-transparent hover:text-white hover:after:right-[-40%]`,
+        className
+      )}
+    >
+      {icon}
+      {children}
+    </button>
+  );
+};

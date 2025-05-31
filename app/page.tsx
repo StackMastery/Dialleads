@@ -1,6 +1,7 @@
 import AiAgentAction from "./components/widgets/AiAgentAction";
 import BrandSection from "./components/widgets/BrandSection";
 import Features from "./components/widgets/Features";
+import GetStarted from "./components/widgets/GetStarted";
 import Hero from "./components/widgets/Hero";
 import Industry from "./components/widgets/Industry";
 import TestCall from "./components/widgets/TestCall";
@@ -14,6 +15,7 @@ const Home = () => {
       <Features />
       <Industry />
       <AiAgentAction />
+      <GetStarted />
     </>
   );
 };
