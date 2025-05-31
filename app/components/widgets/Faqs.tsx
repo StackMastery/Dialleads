@@ -14,7 +14,9 @@ const Faqs = () => {
       <section className="section pb-20">
         <div className="max-w-p w-full flex flex-col md:flex-row px-5 gap-10 gap-y-5">
           <div className="w-full md:w-5/12 flex items-center flex-col md:items-start">
-            <SectionLabel icon={<Info />}>FAQ</SectionLabel>
+            <SectionLabel icon={<Info strokeWidth={1.2} size={20} />}>
+              FAQ
+            </SectionLabel>
             <h2 className="mt-6 text-center text-black mb-[1.5rem] md:text-left font-geist text-[36px] leading-[42px] font-semibold tracking-[-1%] lg:text-[48px] lg:leading-[115%] lg:tracking-[-1px]">
               Everything You Need to Know
             </h2>

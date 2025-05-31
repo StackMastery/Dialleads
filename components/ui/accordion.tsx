@@ -38,7 +38,7 @@ function AccordionTrigger({
       <AccordionPrimitive.Trigger
         data-slot="accordion-trigger"
         className={cn(
-          "flex items-center w-full cursor-pointer justify-between text-xl ",
+          "flex text-start w-full cursor-pointer justify-between text-xl ",
           className
         )}
         {...props}

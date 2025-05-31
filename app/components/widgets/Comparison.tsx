@@ -72,9 +72,9 @@ export const ComparisonCard = ({
                 className="flex items-center gap-3 mb-4 text-left"
               >
                 {isHuman ? (
-                  <CircleOff className="text-red-400 w-5 h-5 mt-1" />
+                  <CircleOff size={24} className="text-red-400  mt-1" />
                 ) : (
-                  <ThumbsUp className="text-sky-600 w-5 h-5 mt-1" />
+                  <ThumbsUp size={24} className="text-sky-600 mt-1" />
                 )}
                 <span className={cn(isHuman ? "text-gray-800" : "text-white")}>
                   {fe}

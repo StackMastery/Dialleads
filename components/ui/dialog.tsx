@@ -38,7 +38,7 @@ function DialogOverlay({
     <DialogPrimitive.Overlay
       data-slot="dialog-overlay"
       className={cn(
-        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-[9999] bg-white/10 backdrop-blur-[2px]",
+        "data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 fixed inset-0 z-[9999999] bg-white/10 backdrop-blur-[4px]",
         className
       )}
       {...props}
@@ -47,12 +47,14 @@ function DialogOverlay({
 }
 
 function DialogContent({
+  closeBtn,
   className,
   children,
   showCloseButton = true,
   ...props
 }: React.ComponentProps<typeof DialogPrimitive.Content> & {
   showCloseButton?: boolean;
+  closeBtn?: string;
 }) {
   return (
     <DialogPortal data-slot="dialog-portal">
@@ -60,7 +62,7 @@ function DialogContent({
       <DialogPrimitive.Content
         data-slot="dialog-content"
         className={cn(
-          "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-[999999] grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border p-6 shadow-lg duration-200 sm:max-w-lg",
+          "bg-background data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:fade-in-0 data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-95 fixed top-[50%] left-[50%] z-[999999999] grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border p-6  duration-200 sm:max-w-lg",
           className
         )}
         {...props}
@@ -69,7 +71,7 @@ function DialogContent({
         {showCloseButton && (
           <DialogPrimitive.Close
             data-slot="dialog-close"
-            className="rounded-md bg-white size-8 scale-90 p-1 z-[99999] absolute cursor-pointer flex justify-center items-center right-2 -mt-2 text-black"
+            className={`rounded-md bg-white size-8 scale-90 p-1 z-[99999] absolute cursor-pointer flex justify-center items-center right-2 -mt-2 text-black ${closeBtn}`}
           >
             <XIcon strokeWidth={1.5} />
             <span className="sr-only">Close</span>

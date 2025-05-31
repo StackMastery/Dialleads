@@ -7,6 +7,7 @@ import GetStarted from "./components/widgets/GetStarted";
 import Hero from "./components/widgets/Hero";
 import Industry from "./components/widgets/Industry";
 import TestCall from "./components/widgets/TestCall";
+import Testomonial from "./components/widgets/Testomonial";
 
 const Home = () => {
   return (
@@ -19,6 +20,7 @@ const Home = () => {
       <AiAgentAction />
       <GetStarted />
       <Comparision />
+      <Testomonial />
       <Faqs />
     </>
   );
