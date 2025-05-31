@@ -43,7 +43,7 @@ const Footer = () => {
               layout="fill"
             />
           </div>
-          <div className="w-full flex justify-between flex-wrap gap-x-10 pt-10 pb-5 border-b border-border-main">
+          <div className="w-full flex justify-between flex-wrap gap-x-10 pt-10 pb-5 border-b border-border-main mt-10">
             <div className="max-w-[384px]">
               <Logo
                 mode="dark"
